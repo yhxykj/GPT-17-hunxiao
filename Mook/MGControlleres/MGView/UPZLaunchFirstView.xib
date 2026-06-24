@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="KJq-Ux-1te" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="FBP-Rr-SSH" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="A4k-WF-Kkr" customClass="UPZLaunchFirstView" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="543"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="openRegister_2pRecords" translatesAutoresizingMaskIntoConstraints="NO" id="QqT-1v-tah">
+                    <rect key="frame" x="162" y="126" width="66" height="68"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="抱歉，您目前还没有创建AI角色" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1EA-YX-njJ">
+                    <rect key="frame" x="109.66666666666667" y="207" width="170.66666666666663" height="14.333333333333343"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="QqT-1v-tah" firstAttribute="top" secondItem="A4k-WF-Kkr" secondAttribute="top" constant="125.99" id="Ivo-Vt-Suw"/>
+                <constraint firstItem="QqT-1v-tah" firstAttribute="centerX" secondItem="A4k-WF-Kkr" secondAttribute="centerX" id="5Uw-hG-H63"/>
+                <constraint firstItem="1EA-YX-njJ" firstAttribute="top" secondItem="QqT-1v-tah" secondAttribute="bottom" constant="12.99" id="png-4y-nIH"/>
+                <constraint firstItem="1EA-YX-njJ" firstAttribute="centerX" secondItem="QqT-1v-tah" secondAttribute="centerX" id="Aj3-n7-xRa"/>
+            </constraints>
+            <point key="canvasLocation" x="68.702290076335871" y="75.704225352112687"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="openRegister_2pRecords" width="66" height="68"/>
+    </resources>
+</document>

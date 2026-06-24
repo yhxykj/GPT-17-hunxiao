@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="KJq-Ux-1te" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="FBP-Rr-SSH" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="SJP-nm-Uot" customClass="JJAlamofireCell" customModule="Mook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="388" height="712"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="388" height="712"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome0" translatesAutoresizingMaskIntoConstraints="NO" id="IUD-SC-LpS">
+                        <rect key="frame" x="0.0" y="0.0" width="388" height="712"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4h-ex-iEv">
+                        <rect key="frame" x="22" y="588" width="344" height="88"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="88.010000000000005" id="LZU-fW-hBh"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="22"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="jV0-Bo-OvW"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="IUD-SC-LpS" secondAttribute="trailing" id="AO1-WY-uuA"/>
+                <constraint firstItem="N4h-ex-iEv" firstAttribute="leading" secondItem="SJP-nm-Uot" secondAttribute="leading" constant="21.989999999999998" id="MdU-cF-I28"/>
+                <constraint firstAttribute="bottom" secondItem="N4h-ex-iEv" secondAttribute="bottom" constant="35.990000000000002" id="byF-7I-AdD"/>
+                <constraint firstItem="N4h-ex-iEv" firstAttribute="centerX" secondItem="SJP-nm-Uot" secondAttribute="centerX" id="g66-of-oiZ"/>
+                <constraint firstAttribute="trailing" secondItem="N4h-ex-iEv" secondAttribute="trailing" constant="22.030000000000001" id="l7S-id-J1q"/>
+                <constraint firstItem="IUD-SC-LpS" firstAttribute="top" secondItem="SJP-nm-Uot" secondAttribute="top" id="pkM-0E-M76"/>
+                <constraint firstItem="IUD-SC-LpS" firstAttribute="leading" secondItem="SJP-nm-Uot" secondAttribute="leading" id="seP-0d-co2"/>
+                <constraint firstAttribute="bottom" secondItem="IUD-SC-LpS" secondAttribute="bottom" id="ymy-cQ-E8h"/>
+            </constraints>
+            <size key="customSize" width="388" height="712"/>
+            <connections>
+                <outlet property="Icon" destination="IUD-SC-LpS" id="L9S-eh-vY9"/>
+                <outlet property="button" destination="N4h-ex-iEv" id="eOG-lf-CTE"/>
+            </connections>
+            <point key="canvasLocation" x="219.84732824427479" y="36.619718309859159"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="welcome0" width="390" height="844"/>
+    </resources>
+</document>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="KJq-Ux-1te" userLabel="File's Owner" customClass="UNKRegisterController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="oDI-FK-a4i" id="P2u-lY-WnY"/>
+                <outlet property="button" destination="oIL-JU-p26" id="RYn-qp-HaB"/>
+                <outlet property="itemView" destination="NXh-d6-APk" id="GQ2-m4-5Mb"/>
+                <outlet property="view" destination="tpR-nt-G89" id="Qju-6l-BFg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="FBP-Rr-SSH" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="tpR-nt-G89">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pingResponse" translatesAutoresizingMaskIntoConstraints="NO" id="SDd-1O-6gV">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NXh-d6-APk">
+                    <rect key="frame" x="0.0" y="461" width="393" height="391"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAa-fX-6eL">
+                            <rect key="frame" x="16" y="168" width="361" height="54"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="unselectFfrightRobotlogo"/>
+                            <connections>
+                                <action selector="_seekLogin:" destination="KJq-Ux-1te" eventType="touchUpInside" id="Nf0-4q-ZXM"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rhp-Iv-RES">
+                            <rect key="frame" x="16" y="248" width="361" height="54"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOa-7Q-BrB">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="54"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="type_qAbout"/>
+                                    <connections>
+                                        <action selector="_phoneClick:" destination="KJq-Ux-1te" eventType="touchUpInside" id="xzu-vW-Nwl"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="53.98" id="5hL-i7-Z5Y"/>
+                                <constraint firstItem="vOa-7Q-BrB" firstAttribute="leading" secondItem="Rhp-Iv-RES" secondAttribute="leading" id="dzX-kL-dDG"/>
+                                <constraint firstItem="vOa-7Q-BrB" firstAttribute="top" secondItem="Rhp-Iv-RES" secondAttribute="top" id="BdN-Lh-76y"/>
+                                <constraint firstAttribute="bottom" secondItem="vOa-7Q-BrB" secondAttribute="bottom" id="UPd-Cs-R9s"/>
+                                <constraint firstAttribute="trailing" secondItem="vOa-7Q-BrB" secondAttribute="trailing" id="rro-hl-o3z"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Rhp-Iv-RES" secondAttribute="bottom" constant="89.01" id="7is-UY-LzV"/>
+                        <constraint firstItem="Rhp-Iv-RES" firstAttribute="top" secondItem="oAa-fX-6eL" secondAttribute="bottom" constant="25.99" id="Vrs-YD-e55"/>
+                        <constraint firstItem="Rhp-Iv-RES" firstAttribute="leading" secondItem="NXh-d6-APk" secondAttribute="leading" constant="16.02" id="YBQ-Uq-nCn"/>
+                        <constraint firstItem="oAa-fX-6eL" firstAttribute="leading" secondItem="NXh-d6-APk" secondAttribute="leading" constant="15.99" id="PBX-Mu-2cz"/>
+                        <constraint firstAttribute="height" constant="390.98" id="kMu-HA-JbO"/>
+                        <constraint firstAttribute="trailing" secondItem="Rhp-Iv-RES" secondAttribute="trailing" constant="16.01" id="oZW-u3-5IU"/>
+                        <constraint firstAttribute="trailing" secondItem="oAa-fX-6eL" secondAttribute="trailing" constant="16.01" id="J7d-zZ-8OX"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDI-FK-a4i">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pingResponse" translatesAutoresizingMaskIntoConstraints="NO" id="Ukk-b5-1i9">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIL-JU-p26">
+                            <rect key="frame" x="16" y="655" width="361" height="52"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52.01" id="S5k-Nw-DzF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="menuNews"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="26"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="_speedLogin:" destination="KJq-Ux-1te" eventType="touchUpInside" id="YqQ-RL-hVW"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="oIL-JU-p26" firstAttribute="leading" secondItem="oDI-FK-a4i" secondAttribute="leading" constant="16.03" id="NiM-Lk-5ii"/>
+                        <constraint firstAttribute="bottom" secondItem="oIL-JU-p26" secondAttribute="bottom" constant="144.99" id="JWw-Cq-CO4"/>
+                        <constraint firstAttribute="trailing" secondItem="oIL-JU-p26" secondAttribute="trailing" constant="16.02" id="aO8-uD-Op8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="p06-nG-Tjt"/>
+            <constraints>
+                <constraint firstItem="oDI-FK-a4i" firstAttribute="top" secondItem="tpR-nt-G89" secondAttribute="top" id="pi1-m5-A8i"/>
+                <constraint firstAttribute="bottom" secondItem="oDI-FK-a4i" secondAttribute="bottom" id="b51-vs-2xi"/>
+                <constraint firstItem="p06-nG-Tjt" firstAttribute="trailing" secondItem="SDd-1O-6gV" secondAttribute="trailing" id="Bjt-UO-3l8"/>
+                <constraint firstItem="NXh-d6-APk" firstAttribute="leading" secondItem="p06-nG-Tjt" secondAttribute="leading" id="m9S-xV-ihg"/>
+                <constraint firstItem="p06-nG-Tjt" firstAttribute="trailing" secondItem="oDI-FK-a4i" secondAttribute="trailing" id="KI4-8a-CXZ"/>
+                <constraint firstItem="SDd-1O-6gV" firstAttribute="leading" secondItem="p06-nG-Tjt" secondAttribute="leading" id="7Pv-gg-o1y"/>
+                <constraint firstItem="oDI-FK-a4i" firstAttribute="leading" secondItem="p06-nG-Tjt" secondAttribute="leading" id="tKd-lE-WEI"/>
+                <constraint firstAttribute="bottom" secondItem="NXh-d6-APk" secondAttribute="bottom" id="I75-BT-IW9"/>
+                <constraint firstItem="oDI-FK-a4i" firstAttribute="leading" secondItem="tpR-nt-G89" secondAttribute="leading" id="nU7-Rl-tlJ"/>
+                <constraint firstAttribute="bottom" secondItem="SDd-1O-6gV" secondAttribute="bottom" id="zyT-M3-Teo"/>
+                <constraint firstItem="oDI-FK-a4i" firstAttribute="top" secondItem="tpR-nt-G89" secondAttribute="top" id="wDr-r1-qxV"/>
+                <constraint firstItem="p06-nG-Tjt" firstAttribute="trailing" secondItem="NXh-d6-APk" secondAttribute="trailing" id="jax-Xz-ipQ"/>
+                <constraint firstItem="oDI-FK-a4i" firstAttribute="trailing" secondItem="p06-nG-Tjt" secondAttribute="trailing" id="o60-tq-7sR"/>
+                <constraint firstAttribute="bottom" secondItem="oDI-FK-a4i" secondAttribute="bottom" id="t2i-83-zNW"/>
+                <constraint firstItem="SDd-1O-6gV" firstAttribute="top" secondItem="tpR-nt-G89" secondAttribute="top" id="bdh-iG-Ens"/>
+            </constraints>
+            <point key="canvasLocation" x="87.786259541984734" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="unselectFfrightRobotlogo" width="358" height="54"/>
+        <image name="type_qAbout" width="296" height="54"/>
+        <image name="menuNews" width="358" height="54"/>
+        <image name="pingResponse" width="390" height="844"/>
+    </resources>
+</document>
