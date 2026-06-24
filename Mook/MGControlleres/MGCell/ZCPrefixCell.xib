@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="KJq-Ux-1te" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="FBP-Rr-SSH" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="78" id="ekV-f4-iVv" customClass="ZCPrefixCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="78"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="ekV-f4-iVv" id="2np-vS-ujU">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="78"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BW2-Kg-RNU">
+                        <rect key="frame" x="16" y="4" width="336" height="68"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navigationRegister_11" translatesAutoresizingMaskIntoConstraints="NO" id="SUz-Eb-v6n">
+                                <rect key="frame" x="0.0" y="0.0" width="336" height="68"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="帮我给我的女友写一封情书，表达爱意的" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlz-0i-WNf">
+                                <rect key="frame" x="16" y="25" width="304" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="SUz-Eb-v6n" secondAttribute="trailing" id="pXd-wL-dC4"/>
+                            <constraint firstItem="rlz-0i-WNf" firstAttribute="leading" secondItem="BW2-Kg-RNU" secondAttribute="leading" constant="16.04" id="a3Z-vB-zTT"/>
+                            <constraint firstItem="SUz-Eb-v6n" firstAttribute="top" secondItem="BW2-Kg-RNU" secondAttribute="top" id="6FJ-pB-ZwL"/>
+                            <constraint firstAttribute="height" constant="68.01" id="JPS-SX-u8X"/>
+                            <constraint firstAttribute="bottom" secondItem="SUz-Eb-v6n" secondAttribute="bottom" id="CZ4-ri-f7S"/>
+                            <constraint firstItem="rlz-0i-WNf" firstAttribute="centerY" secondItem="BW2-Kg-RNU" secondAttribute="centerY" id="AYh-YC-x4A"/>
+                            <constraint firstItem="SUz-Eb-v6n" firstAttribute="leading" secondItem="BW2-Kg-RNU" secondAttribute="leading" id="fj0-dz-MuG"/>
+                            <constraint firstAttribute="trailing" secondItem="rlz-0i-WNf" secondAttribute="trailing" constant="15.99" id="FYi-Yk-LtA"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BW2-Kg-RNU" firstAttribute="leading" secondItem="2np-vS-ujU" secondAttribute="leading" constant="16.02" id="y94-sb-i3z"/>
+                    <constraint firstAttribute="trailing" secondItem="BW2-Kg-RNU" secondAttribute="trailing" constant="15.99" id="GfQ-IG-PXu"/>
+                    <constraint firstAttribute="bottom" secondItem="BW2-Kg-RNU" secondAttribute="bottom" constant="4.02" id="BrJ-0w-4ZU"/>
+                    <constraint firstItem="BW2-Kg-RNU" firstAttribute="top" secondItem="2np-vS-ujU" secondAttribute="top" constant="4.02" id="vBs-7F-X2G"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="8A5-CK-eSv"/>
+            <connections>
+                <outlet property="label" destination="rlz-0i-WNf" id="vXn-qW-3K5"/>
+            </connections>
+            <point key="canvasLocation" x="166.41221374045801" y="-0.70422535211267612"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="navigationRegister_11" width="358" height="80"/>
+    </resources>
+</document>

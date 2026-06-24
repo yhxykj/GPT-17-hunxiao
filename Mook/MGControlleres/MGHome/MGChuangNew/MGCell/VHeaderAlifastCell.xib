@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="KJq-Ux-1te" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="FBP-Rr-SSH" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="SJP-nm-Uot" customClass="VHeaderAlifastCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="145"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pvv-Mv-6O8">
+                        <rect key="frame" x="15" y="42.666666666666657" width="313" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWg-WD-yHO">
+                                <rect key="frame" x="21" y="21" width="233" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rS5-p7-faD">
+                                <rect key="frame" x="269" y="19" width="44" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44.02" id="xlS-xg-23H"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="class_cNumber"/>
+                                <connections>
+                                    <action selector="down:" destination="SJP-nm-Uot" eventType="touchUpInside" id="wmm-n4-Z0L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.97254901960784312" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="IWg-WD-yHO" firstAttribute="centerY" secondItem="pvv-Mv-6O8" secondAttribute="centerY" id="ryX-3E-dew"/>
+                            <constraint firstItem="rS5-p7-faD" firstAttribute="leading" secondItem="IWg-WD-yHO" secondAttribute="trailing" constant="15.03" id="GIJ-qO-5Mc"/>
+                            <constraint firstItem="rS5-p7-faD" firstAttribute="centerY" secondItem="pvv-Mv-6O8" secondAttribute="centerY" id="hdE-Gg-wko"/>
+                            <constraint firstAttribute="trailing" secondItem="rS5-p7-faD" secondAttribute="trailing" id="9gp-T2-sPV"/>
+                            <constraint firstAttribute="height" constant="59.95" id="wQu-X8-txi"/>
+                            <constraint firstItem="IWg-WD-yHO" firstAttribute="leading" secondItem="pvv-Mv-6O8" secondAttribute="leading" constant="21.01" id="x4s-os-Kv1"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="jV0-Bo-OvW"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pvv-Mv-6O8" secondAttribute="trailing" constant="14.98" id="qDw-JQ-G1i"/>
+                <constraint firstItem="pvv-Mv-6O8" firstAttribute="leading" secondItem="SJP-nm-Uot" secondAttribute="leading" constant="14.98" id="HJ8-uJ-XRQ"/>
+                <constraint firstItem="pvv-Mv-6O8" firstAttribute="centerY" secondItem="SJP-nm-Uot" secondAttribute="centerY" id="Mlg-sb-y9o"/>
+            </constraints>
+            <size key="customSize" width="343" height="145"/>
+            <connections>
+                <outlet property="labeel" destination="IWg-WD-yHO" id="Siq-hj-IKT"/>
+            </connections>
+            <point key="canvasLocation" x="254.61538461538461" y="-39.454976303317537"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="class_cNumber" width="15" height="8"/>
+    </resources>
+</document>

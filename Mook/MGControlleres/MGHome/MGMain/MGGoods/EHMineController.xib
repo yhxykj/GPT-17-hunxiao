@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="KJq-Ux-1te" userLabel="File's Owner" customClass="KMCardController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="tpR-nt-G89" id="Qju-6l-BFg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="FBP-Rr-SSH" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="tpR-nt-G89">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bufferAnswerAssitant" translatesAutoresizingMaskIntoConstraints="NO" id="LAy-0d-Y6h">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsE-Qb-g2h">
+                    <rect key="frame" x="46" y="744" width="301" height="54"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="userResponseAnswer"/>
+                    <connections>
+                        <action selector="_nextClick" destination="KJq-Ux-1te" eventType="touchUpInside" id="xUo-ir-EPR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rvr-Y1-Ihw">
+                    <rect key="frame" x="10" y="59" width="55" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55.02" id="Srp-PD-7OY"/>
+                        <constraint firstAttribute="height" constant="43.99" id="CkH-6s-mlx"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="centerBase"/>
+                    <connections>
+                        <action selector="_dissmiss:" destination="KJq-Ux-1te" eventType="touchUpInside" id="LmL-rS-39x"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="p06-nG-Tjt"/>
+            <color key="backgroundColor" red="0.094117647060000004" green="0.10980392160000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Rvr-Y1-Ihw" firstAttribute="leading" secondItem="p06-nG-Tjt" secondAttribute="leading" constant="10.01" id="n5A-Ba-dyH"/>
+                <constraint firstItem="p06-nG-Tjt" firstAttribute="trailing" secondItem="vsE-Qb-g2h" secondAttribute="trailing" constant="46.04" id="4Wx-Jc-uaB"/>
+                <constraint firstItem="Rvr-Y1-Ihw" firstAttribute="top" secondItem="p06-nG-Tjt" secondAttribute="top" id="D6X-wP-N01"/>
+                <constraint firstItem="p06-nG-Tjt" firstAttribute="trailing" secondItem="LAy-0d-Y6h" secondAttribute="trailing" id="tzH-y3-Daz"/>
+                <constraint firstAttribute="bottom" secondItem="LAy-0d-Y6h" secondAttribute="bottom" id="JUi-xQ-42Y"/>
+                <constraint firstItem="LAy-0d-Y6h" firstAttribute="top" secondItem="tpR-nt-G89" secondAttribute="top" id="fLS-wg-tAv"/>
+                <constraint firstItem="vsE-Qb-g2h" firstAttribute="leading" secondItem="p06-nG-Tjt" secondAttribute="leading" constant="46.02" id="nOx-2p-WLp"/>
+                <constraint firstItem="LAy-0d-Y6h" firstAttribute="leading" secondItem="p06-nG-Tjt" secondAttribute="leading" id="WFN-NR-sJt"/>
+                <constraint firstItem="p06-nG-Tjt" firstAttribute="bottom" secondItem="vsE-Qb-g2h" secondAttribute="bottom" constant="20.02" id="oIa-3H-O2W"/>
+            </constraints>
+            <point key="canvasLocation" x="91" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bufferAnswerAssitant" width="390" height="844"/>
+        <image name="userResponseAnswer" width="298" height="54"/>
+        <image name="centerBase" width="24" height="24"/>
+    </resources>
+</document>

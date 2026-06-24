@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="KJq-Ux-1te" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="FBP-Rr-SSH" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="278" id="ekV-f4-iVv" customClass="FXItemsShowCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="278"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ekV-f4-iVv" id="2np-vS-ujU">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="278"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VtZ-oJ-9ai">
+                        <rect key="frame" x="13" y="16" width="258" height="262"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bby-Zo-CVC">
+                                <rect key="frame" x="20" y="20" width="225" height="222"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <color key="textColor" red="0.92156862750000001" green="0.93333333330000001" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16862745098039217" green="0.16862745098039217" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Bby-Zo-CVC" secondAttribute="bottom" constant="20.05" id="uMw-ND-o5x"/>
+                            <constraint firstAttribute="trailing" secondItem="Bby-Zo-CVC" secondAttribute="trailing" constant="13.01" id="gyv-L9-mV7"/>
+                            <constraint firstItem="Bby-Zo-CVC" firstAttribute="leading" secondItem="VtZ-oJ-9ai" secondAttribute="leading" constant="20.01" id="8Ld-vg-aoS"/>
+                            <constraint firstItem="Bby-Zo-CVC" firstAttribute="top" secondItem="VtZ-oJ-9ai" secondAttribute="top" constant="20.02" id="VVa-wf-TYu"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Py5-RE-dwF">
+                        <rect key="frame" x="271" y="20" width="49" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44.01" id="zrE-t0-gV0"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="星星"/>
+                        <connections>
+                            <action selector="collectionClick:" destination="ekV-f4-iVv" eventType="touchUpInside" id="WFC-Vj-hJb"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Py5-RE-dwF" secondAttribute="trailing" id="x1d-J5-YSt"/>
+                    <constraint firstAttribute="trailing" secondItem="VtZ-oJ-9ai" secondAttribute="trailing" constant="48.97" id="VDV-k5-sZK"/>
+                    <constraint firstItem="VtZ-oJ-9ai" firstAttribute="leading" secondItem="2np-vS-ujU" secondAttribute="leading" constant="13.02" id="PsR-Z2-dtn"/>
+                    <constraint firstItem="VtZ-oJ-9ai" firstAttribute="top" secondItem="2np-vS-ujU" secondAttribute="top" constant="15.98" id="C3z-6j-ieN"/>
+                    <constraint firstAttribute="bottom" secondItem="VtZ-oJ-9ai" secondAttribute="bottom" id="SGM-2a-czt"/>
+                    <constraint firstItem="Py5-RE-dwF" firstAttribute="leading" secondItem="VtZ-oJ-9ai" secondAttribute="trailing" id="BqG-OP-TDE"/>
+                    <constraint firstItem="Py5-RE-dwF" firstAttribute="top" secondItem="2np-vS-ujU" secondAttribute="top" constant="20.04" id="yaE-81-Q9N"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="8A5-CK-eSv"/>
+            <connections>
+                <outlet property="label" destination="Bby-Zo-CVC" id="L7h-C8-zQm"/>
+            </connections>
+            <point key="canvasLocation" x="83.969465648854964" y="45.774647887323944"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="星星" width="22" height="21"/>
+    </resources>
+</document>
